@@ -9,10 +9,15 @@ You can override the default settings of the plugin by passing parameters
 
 jQuery('#hero').heroize({
 	'heroTransitionSpeed': 700,   //transition time in miliseconds
+	
     'heroTimeDelay': 8000,		  //panel display length in miliseconds
-    'heroPlayImg': 'play.png',	  //path to custom play button	
+    
+    'heroPlayImg': 'play.png',	  //path to custom play button
+    
     'heroPauseImg': 'pause.png',  //path to custom pause button
+    
     'heroNextChar': '&gt;'        //Character to use in "Next" button
+    
 });
 
 In addition the included CSS file has been clearly marked to easily configure the 
