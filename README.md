@@ -1,2 +1,0 @@
-heroize-jquery-plugin
-=====================

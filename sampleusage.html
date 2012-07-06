@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sample Usage for Heroize Plugin</title>
+<link rel="stylesheet" href="heroize.css" type="text/css" />
+<!--
+Welcome to the sample usage page for the Heroize plugin
+
+1. Setting up - See the current HTML code for an example of basic usage
+
+2. How to Customize
+The hero pane is highly customizable.
+You can override the default settings of the plugin by passing parameters
+
+jQuery('#hero').heroize({
+	'heroTransitionSpeed': 700,   //transition time in miliseconds
+    'heroTimeDelay': 8000,		  //panel display length in miliseconds
+    'heroPlayImg': 'play.png',	  //path to custom play button	
+    'heroPauseImg': 'pause.png',  //path to custom pause button
+    'heroNextChar': '&gt;'        //Character to use in "Next" button
+});
+
+
+In addition the included CSS file has been clearly marked to easily configure the 
+height, width, fonts, opacities, colors, text bar properties
+
+-->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+<script src="jquery.heroize.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+  jQuery('#hero').heroize();
+});
+</script>
+</head>
+
+<body>
+<div id="hero">
+    <noscript><div id="defaulthero">Display this panel when javascript isn't loaded</div></noscript>
+    
+    <div class="heropane"><a href="http://www.google.com" ><img border="0" alt="Feat One" src="sampleimages/feat1.jpg"></a></div>
+    <div class="herotext">Feature 1 - Be sure to view source to see customizable options!</div>
+    
+    <div class="heropane"><a href="http://www.yahoo.com" ><img border="0" alt="Feat Two" src="sampleimages/feat2.jpg"></a></div>
+    <div class="herotext">Feature 2 - Be sure to view source to see customizable options!</div>
+    
+    <div class="heropane"><a href="http://www.ebay.com" ><img border="0" alt="Feat Three" src="sampleimages/feat3.jpg"></a></div>
+    <div class="herotext">Feature 3 - Be sure to view source to see customizable options!</div>
+</div>
+
+
+</body>
+</html>

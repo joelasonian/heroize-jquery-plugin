@@ -1,0 +1,85 @@
+/***           
+* heroize.css
+* version : 0.1  |  2011.06.24
+* author: Joel Peterson | @joelasonian
+*
+***/
+ 
+/*** 
+*
+* Start Customizable settings
+*  - Configure this section as needed
+*
+***/
+
+#hero, #defaulthero{
+			width:650px;					/*	WIDTH		*/			
+			height:200px;					/*	HEIGHT		*/
+			background:#fff;				/*	BACKGROUND COLOR		*/
+}
+#hero .herotext{
+			font:14px/30px Arial;			/*	HERO TEXT BAR LINE HEIGHT	*/
+			color:#FFF;						/*	HERO TEXT BAR COLOR	*/
+}
+#hero .herotext a,
+#hero .herotext a:LINK,
+#hero .herotext a:VISITED,
+#hero .herotext a:HOVER,
+#hero .herotext a:ACTIVE {
+			font:14px/30px Arial;			/*	HERO TEXT BAR ANCHOR SYTLES - FONT*/
+			color:#FFF;						/*	HERO TEXT BAR ANCHOR SYTLES - COLOR	*/
+			text-decoration:underline;		/*	HERO TEXT BAR ANCHOR SYTLES - TEXT DECORATION	*/
+}
+#hero .featblackbar{
+			height: 30px;					/*	HERO TEXT BAR HEIGHT	*/
+}
+#hero .featbarbg{
+			background-color:#000;			/*	HERO TEXT BACKGROUND BAR COLOR	*/
+}
+#hero #featloader{
+			width:50px;						/*	MAX WIDTH OF THE ANIMATED LOADING LINE	*/ 
+}
+#hero #loader{
+			height:1px;						/*	HEIGHT OF THE ANIMATED LOADING LINE	*/
+			background-color:#FFF;			/*	COLOR OF THE ANIMATED LOADING LINE	*/
+}
+#hero .featitem, #hero .featnext{
+			background-color:#FFF;			/*	BUTTONS BACKGROUND COLOR	*/
+			color:#000;						/*	BUTTONS TEXT COLOR			*/
+			font:bold 11px/19px Arial;		/*	BUTTONS FONT TREATMENT		*/
+}
+#hero .transparent{							/*	SHARED OPACITY SETTINGS: HERO TEXT BG, REST STATE FOR BUTTONS */
+			-moz-opacity:.6; 			
+			filter:alpha(opacity=60); 	
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+			-khtml-opacity: 0.6;
+			opacity:.6;	
+}
+
+/*** 
+*
+* END Customizable settings
+*
+***/
+
+#hero img {margin:0 !important;padding:0 !important;}
+#hero, #defaulthero{overflow:hidden;position:relative;}
+#hero #featloader{position:absolute;bottom:11px;right:40px;}
+#hero .heropane{position: absolute;top:0;display:none;width:100%;height:100%}
+#hero .defaulthero{display:block;}
+#hero .featcontrols{position:absolute;bottom:3px;right:6px;color:#FFFFFF;z-index:3;overflow:visible;}
+#hero #playpause{position:absolute;bottom:9px;right:29px;cursor:pointer;}
+#hero .featnext{position:absolute;bottom:0;right:0;}
+#hero .featitem, #hero .featnext{
+	width:19px;height:19px;text-align:center;margin:4px 0; 
+	-moz-border-radius: 2px;-webkit-border-radius: 2px;border-radius: 2px; 
+	-moz-box-shadow: 0px 0px 4px #000000;-webkit-box-shadow: 0px 0px 4px #000000;box-shadow: 0px 0px 4px #000000; 
+	cursor:pointer;-moz-user-select: none;-khtml-user-select: none;-webkit-user-select: none;user-select: none;
+}
+#hero .featnext{font-size:18px;}
+#hero #loader{width:100%;}
+#hero #heroitemwrap{position:absolute;bottom:24px;right:0;display:none;}
+#hero .featblackbar{position:absolute;width:100%;bottom:0;left:0;padding:0;	}
+#hero .featblackbar span{padding: 0 0 0 20px;}
+#hero .featbarbg{position:absolute;top:0;left:0;width:100%;height:100%;}
+#hero .herotext{position:absolute;top:0;left:0;width:100%;height:100%;padding: 0 0 0 20px;z-index:2;display:none;}
